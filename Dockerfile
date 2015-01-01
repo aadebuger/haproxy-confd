@@ -13,7 +13,7 @@ RUN \
 # install confd
 RUN \
   mkdir -p /app && \
-  wget -q -O /app/confd https://github.com/kelseyhightower/confd/releases/download/v0.7.1-alpha3/confd-0.7.1-linux-amd64 && \
+  wget -q -O /app/confd https://github.com/kelseyhightower/confd/releases/download/v0.7.1/confd-0.7.1-linux-amd64 && \
   chmod +x /app/confd && \
   mkdir -p /etc/confd/conf.d && \
   mkdir -p /etc/confd/templates
