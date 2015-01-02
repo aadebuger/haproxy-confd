@@ -25,7 +25,7 @@ RUN \
 RUN \
   DEBIAN_FRONTEND=noninteractive apt-get -qq update 
 RUN \
-  DEBIAN_FRONTEND=noninteractive apt-get -qq -y install haproxy
+  DEBIAN_FRONTEND=noninteractive apt-get -qq -y --force-yes install haproxy
 
 # syslog configuration
 RUN \
