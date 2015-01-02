@@ -23,7 +23,8 @@ RUN   chmod +x /app/confd && \
 RUN \
   add-apt-repository ppa:vbernat/haproxy-1.5 
 RUN \
-  DEBIAN_FRONTEND=noninteractive apt-get -qq update && \
+  DEBIAN_FRONTEND=noninteractive apt-get -qq update 
+RUN \
   DEBIAN_FRONTEND=noninteractive apt-get -qq -y install haproxy
 
 # syslog configuration
