@@ -21,7 +21,8 @@ RUN   chmod +x /app/confd && \
 
 # install haproxy
 RUN \
-  add-apt-repository ppa:vbernat/haproxy-1.5 && \
+  add-apt-repository ppa:vbernat/haproxy-1.5 
+RUN \
   DEBIAN_FRONTEND=noninteractive apt-get -qq update && \
   DEBIAN_FRONTEND=noninteractive apt-get -qq -y install haproxy
 
